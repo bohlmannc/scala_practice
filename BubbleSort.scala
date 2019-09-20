@@ -1,7 +1,7 @@
 import scala.annotation.tailrec
 
-object bubble_sort {
-  def bs(arr: Vector[Int]): Vector[Int] = {
+object BubbleSort {
+  def bubbleSort(arr: Vector[Int]): Vector[Int] = {
 
     @tailrec
     def go(arr: Vector[Int], i: Int, swaps: Boolean): (Vector[Int], Boolean) = {
@@ -18,8 +18,8 @@ object bubble_sort {
     if (!swaps) res
     else bs(res)
   }
-  def main(x: Array[String]): Unit = {
+  def main(args: Array[String]): Unit = {
     val vec = Vector(3, 1, 4, 93, 19)
-    println(bs(vec))
+    println(bubbleSort(vec))
   }
 }
