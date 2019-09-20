@@ -1,4 +1,4 @@
-object quick_sort {
+object QuickSort {
 
   def quickSort(array: Vector[Int], start: Int, end: Int): Vector[Int] = {
     if (start < end) {
