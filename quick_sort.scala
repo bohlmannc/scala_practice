@@ -1,34 +1,3 @@
-/*
-def quick_sort(array, start, end):
-
-    if start < end:
-        pivot = partition(array, start, end)
-
-        quick_sort(array, start, pivot - 1)
-        quick_sort(array, pivot + 1, end)
-
-    return array
-
-
-def partition(arr, j, k):
-    pivot = arr[-1]
-
-    for i in range(j, k):
-        if arr[i] < pivot:
-            arr[i], arr[j] = arr[j], arr[i]
-            j += 1
-
-    arr[j], arr[k] = arr[k], arr[j]
-    return j
-
-
-
-if __name__ == "__main__":
-    a = [10, 7, 8, 9, 1, 5]
-    s = 0
-    e = len(a) - 1
-    print(quick_sort(a, s, e))
- */
 object quick_sort {
 
   def quickSort(array: Vector[Int], start: Int, end: Int): Vector[Int] = {
