@@ -1,8 +1,8 @@
 import scala.annotation.tailrec
 
 
-object insertion_sort {
-  def is(arr: Vector[Int]): Vector[Int] = {
+object InsertionSort {
+  def insertionSort(arr: Vector[Int]): Vector[Int] = {
 
     @tailrec
     def backwards(arr: Vector[Int], i: Int): Vector[Int] =
@@ -19,14 +19,10 @@ object insertion_sort {
     forwards(1, arr)
   }
 
-  def main(x: Array[String]): Unit = {
+  def main(args: Array[String]): Unit = {
     val vec = Vector(3, 1, 4, 93, 19)
-    println(is(vec))
+    println(insertionSort(vec))
 
   }
 
 }
-
-/*def main(args: Array[int]): Unit = {
-
-}*/
