@@ -4,14 +4,14 @@ object Fibonacci {
 
   def fib(n: Int): Int = {
     @tailrec
-    def go(n: Int, a: Int, b: Int): Int = {
-      if (n < 2) b
-      else go(n - 1, b, a + b)
+    def go(i: Int, prev: Int, curr: Int): Int = {
+      if (i < 2) curr
+      else go(i - 1, curr, prev + curr)
     }
   go(n, 0, 1)
   }
 
   def main(args: Array[String]): Unit = {
-    println(fib(9))
+    println(fib(10))
   }
 }
